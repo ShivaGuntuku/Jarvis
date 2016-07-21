@@ -85,8 +85,8 @@ def body():
 	return voice
 
 def mail():
-	user = 'guntuku.shiva@gmail.com'
-	passw = 'RajuGuntuku'
+	user = 'email_address'
+	passw = 'xyz@abc'
 
 	smtp_host = 'smtp.gmail.com'
 	smtp_port = 587
