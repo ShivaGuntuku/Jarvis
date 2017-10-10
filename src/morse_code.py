@@ -24,6 +24,16 @@ def encode_morse_cipher(msg):
 
 
 def decode_morse_cipher(cipher_text):
-	pass
-
-print encode_morse_cipher('shiva prasad')
+	msg = ''
+	cipher_list = cipher_text.split(' ')
+	for item in range(len(cipher_list)):
+		if len(cipher_list[item]) != 0 :
+			for key, value in morse_code_dict.iteritems():
+				if value == cipher_list[item]:
+					msg += key
+		else : 
+			msg += ' '
+	return msg
+				
+print encode_morse_cipher('Hello World')
+print decode_morse_cipher('.... . .-.. .-.. ---  .-- --- .-. .-.. -..')
